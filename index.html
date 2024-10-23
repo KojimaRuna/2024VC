@@ -1,18 +1,127 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>とっぷ</title>
-<link href="top.css" rel="stylesheet" type="text/css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ケーキ屋さん</title>
+    <style>
+        /* すべての要素のマージンとパディングをリセット */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        /* 全体のスタイル設定 */
+        body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+        }
+
+        /* メインコンテナ（全体のレイアウトを包む） */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #F7B5B6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ロゴと店の画像を横並びにする */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        /* ロゴ画像のスタイル */
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* 店の画像のスタイル */
+        .shop-photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* 説明文を入れるスペース */
+        .description {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* ケーキの写真ギャラリーのレイアウト */
+        .cake-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);  /* 常に2つのカラムに設定 */
+            gap: 20px;
+        }
+
+        /* ケーキ画像のスタイル */
+        .cake-item {
+			text-align: center;  /* 名前と説明文を中央揃えにする */
+			border-radius: 10px;
+			background-color: #fff; /* 背景色を追加 */
+			padding: 10px; /* パディングを追加 */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cake-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+    </style>
+</head>
 <body>
-<h1>NSの講義</h1>
-<p>担当　中村直人</p>
-<ul>
-  <li><a href="math.html">情報数学基礎</a></li>
-  <li><a href="CG.html">コンピュータグラフィックス</a></li>
-  <li><a href="VCD.html">ビジュアルコンテンツデザイン</a></li>
-</ul>
+    <div class="container">
+        <!-- ロゴと店の画像を横並びに配置する -->
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" alt="ケーキ屋さんのロゴ">
+            </div>
+            <div class="shop-photo">
+                <img src="shop.jpg" alt="ケーキ屋さんの外観写真">
+            </div>
+        </div>
+
+        <!-- 説明文を入れるスペース -->
+        <div class="description">
+            <h2>当店のご紹介</h2>
+            <p>当店は新鮮な素材を使った手作りケーキが自慢です。毎日焼きたてのケーキをご用意しています。</p>
+        </div>
+
+        <!-- ケーキの写真ギャラリー -->
+        <div class="cake-gallery">
+            <div class="cake-item">
+                <h3>ショートケーキ</h3>
+                <img src="cake01.jpg" alt="ケーキ 1">
+                <p>厳選した北海道産生クリームと、朝摘みの新鮮いちごを使用。ふんわりとしたスポンジとの絶妙なバランスで、シンプルだからこそ素材の良さが際立つ一品です。</p>
+            </div>
+            <div class="cake-item">
+                <h3>和栗モンブラン</h3>
+                <img src="cake02.jpg" alt="ケーキ 2">
+                <p>厳選した国産栗を贅沢に使用。しっとりと焼き上げたスポンジと自家製マロンクリームが奏でる、秋限定の味わい。</p>
+            </div>
+            <div class="cake-item">
+                <h3>ザッハトルテ</h3>
+                <img src="cake03.jpg" alt="ケーキ 3">
+                <p>こだわりのベルギー産チョコレートをふんだんに使い、丁寧に仕上げた一品。アプリコットジャムの酸味がアクセントを加え、コク深い味わいをお楽しみください。</p>
+            </div>
+            <div class="cake-item">
+              <h3>ザクふわシュークリーム</h3>
+                <img src="cake04.jpg" alt="ケーキ 4" width="67%" height="1078">
+                <p>ふわっとザクザク、そしてとろける。特製カスタードがたっぷり詰まった極上のシュークリームです。</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
