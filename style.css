@@ -61,7 +61,7 @@ header {
 
 /*メイン*/
 #hero {
-	background-image: url("../VC_yakiniku/素材/03.jpeg");
+	background-image: url("03.jpeg");
 	background-position: center;
 	background-size: cover;
 	height: 540px;
