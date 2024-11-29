@@ -1,127 +1,130 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html　lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ケーキ屋さん</title>
-    <style>
-        /* すべての要素のマージンとパディングをリセット */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* 全体のスタイル設定 */
-        body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
-        }
-
-        /* メインコンテナ（全体のレイアウトを包む） */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #F7B5B6;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* ロゴと店の画像を横並びにする */
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        /* ロゴ画像のスタイル */
-        .logo img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* 店の画像のスタイル */
-        .shop-photo img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        /* 説明文を入れるスペース */
-        .description {
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        /* ケーキの写真ギャラリーのレイアウト */
-        .cake-gallery {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);  /* 常に2つのカラムに設定 */
-            gap: 20px;
-        }
-
-        /* ケーキ画像のスタイル */
-        .cake-item {
-			text-align: center;  /* 名前と説明文を中央揃えにする */
-			border-radius: 10px;
-			background-color: #fff; /* 背景色を追加 */
-			padding: 10px; /* パディングを追加 */
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .cake-gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-
-    </style>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		  content="width=device-width, initial-
+				   scale=1.0">
+<title>焼肉　牛工大　トップページ</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP&family=Poppins:wght@400;500;700&family=Yuji+Syuku&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <div class="container">
-        <!-- ロゴと店の画像を横並びに配置する -->
-        <div class="header">
-            <div class="logo">
-                <img src="logo.png" alt="ケーキ屋さんのロゴ">
-            </div>
-            <div class="shop-photo">
-                <img src="shop.jpg" alt="ケーキ屋さんの外観写真">
-            </div>
-        </div>
-
-        <!-- 説明文を入れるスペース -->
-        <div class="description">
-            <h2>当店のご紹介</h2>
-            <p>当店は新鮮な素材を使った手作りケーキが自慢です。毎日焼きたてのケーキをご用意しています。</p>
-        </div>
-
-        <!-- ケーキの写真ギャラリー -->
-        <div class="cake-gallery">
-            <div class="cake-item">
-                <h3>ショートケーキ</h3>
-                <img src="cake01.jpg" alt="ケーキ 1">
-                <p>厳選した北海道産生クリームと、朝摘みの新鮮いちごを使用。ふんわりとしたスポンジとの絶妙なバランスで、シンプルだからこそ素材の良さが際立つ一品です。</p>
-            </div>
-            <div class="cake-item">
-                <h3>和栗モンブラン</h3>
-                <img src="cake02.jpg" alt="ケーキ 2">
-                <p>厳選した国産栗を贅沢に使用。しっとりと焼き上げたスポンジと自家製マロンクリームが奏でる、秋限定の味わい。</p>
-            </div>
-            <div class="cake-item">
-                <h3>ザッハトルテ</h3>
-                <img src="cake03.jpg" alt="ケーキ 3">
-                <p>こだわりのベルギー産チョコレートをふんだんに使い、丁寧に仕上げた一品。アプリコットジャムの酸味がアクセントを加え、コク深い味わいをお楽しみください。</p>
-            </div>
-            <div class="cake-item">
-              <h3>ザクふわシュークリーム</h3>
-                <img src="cake04.jpg" alt="ケーキ 4">
-                <p>ふわっとザクザク、そしてとろける。特製カスタードがたっぷり詰まった極上のシュークリームです。</p>
-            </div>
-        </div>
-    </div>
+	
+<header>
+	
+	<div class="container flex pop">
+		<a href="index.html"><img src="素材/logo.jpg" width="94" height="96" alt=""/></a>
+		<a href="" class="logo"> 
+			<span>焼肉　牛工大</span>
+		</a>
+		
+		
+	  <nav>
+	    <ul class="header_top flex">
+	      <li class="no"><a href="#menu" class="no">Menu</a></li>
+	      <li class="no"><a href="reservation.html" class="no">Reservation</a></li>
+	      <li class="no"><a href="#access" class="no">Access</a></li>
+        </ul>
+      </nav>
+  </div>
+</header>
+	
+<main>
+	<section id="hero" class="container">
+		<div class="mm">
+			<p class="dancing">YAKINIKU DINING</p>
+			<h1 class="yuji">牛工大</h1>
+		</div>
+	</section>
+	
+	<section id="motto" class="container">
+		<div class="head">Motto</div>
+		<h2 class="title yuji">モットー</h2>
+		<h3 class="yuji">中途半端なものは提供しません。一流の肉を格安で！</h3>
+		<div class="flex">
+			<div class="mo">
+				<h3 class="yuji">当店について</h3>
+				<p class="text">当店は、しちりんを使った本格炭火焼肉店です。<br>
+					<br>炭火焼肉でも煙などの排気には最新鋭の換気システムを導入しています。<br>
+					<br>オーダーは、タッチパネルから行ってください。<br>
+					<br>会計は、キャッシュレス歓迎、キャッシュレスの場合は１０％オフ
+				</p>
+			</div>
+			<div class="mo">
+				<img src="./素材/01.jpeg" width="100%" alt="">
+			</div>
+		</div>
+	</section>
+	
+	<section id="menu" class="container">
+		<h2 class="title yuji">当店おすすめメニュー</h2>
+		<h3 class="yuji">期間限定</h3>
+		<div class="menu_inner flex">
+			<div class="menu1">
+				<img src="./素材/05.jpg" width="100%" alt="">
+			</div>
+			<div class="menub">
+				<div class="head">Susi</div>
+				<h3>炙り和牛サーロイン寿司</h3>
+				<p class="text">和牛サーロインを軽く炙り、甘辛いタレで味付けした贅沢な逸品。<br>
+					<br>お肉の柔らかさとお寿司のシャリが絶妙にマッチし、一口で幸せ気分に浸れます。</p>
+			</div>
+		</div>
+		<div class="menu_inner flex">
+			<div class="menu1">
+				<img src="./素材/04.jpg" width="100%" alt="">
+			</div>
+			<div class="menub">
+				<div class="head">Steak</div>
+				<h3>厚切りハラミステーキ</h3>
+				<p class="text">程よい歯ごたえとジューシーな味わいが魅力のハラミをステーキサイズでご提供。<br>
+					<br>濃厚なタレで味付けしているので、焼いた瞬間の香りが食欲をそそります。</p>
+			</div>
+		</div>
+		<div class="menu_inner flex">
+			<div class="menu1">
+				<img src="./素材/buta_tan.jpg" width="100%" alt="">
+			</div>
+			<div class="menub">
+				<div class="head">Tan</div>
+				<h3>豚塩タン</h3>
+				<p class="text">新鮮な豚タンを薄切りにし、シンプルに塩で味付けした一品。<br>
+					<br>プリプリとした独特の歯ごたえと、噛むほどに広がる旨味がたまりません。</p>
+			</div>
+		</div>
+	</section>
+	
+	<section id="access" class="container">
+		<h2 class="title yuji">アクセス</h2>
+		<div class="head">Access</div>
+		<dl class="flex">
+			<dt>店名</dt>
+			<dd>牛工大</dd>
+			<dt>場所</dt>
+			<dd>〒000-0000 焼肉市美食町1-2-3</dd>
+			<dt>電話番号</dt>
+			<dd>000-456-7890</dd>
+			<dt>メール</dt>
+			<dd>info@yakiniki.umai.up</dd>
+			<dt>最寄り</dt>
+			<dd>工大駅　西口より徒歩3分</dd>
+		</dl>
+	</section>
+	
+</main>
+	
+	<footer>
+		<a href="" class="logo"> 
+			<span>焼肉　牛工大</span>
+		</a>
+		<div class="copy">
+			©焼肉牛工大　Inc.
+		</div>
+	</footer>
 </body>
 </html>
